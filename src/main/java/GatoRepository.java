@@ -12,4 +12,15 @@ public class GatoRepository {
     public List<Gato> Listar () {
         return bancoDeDados;
     }
+
+    public void deletar(int id) {
+        bancoDeDados.removeIf(g -> g.getId() == id);
+        System.out.println("Cadastro removido do sistema.");
+    }
+
+    public void deletarPorNome(String nome) {
+        bancoDeDados.removeIf(g -> g.getNome() == nome);
+        System.out.println("Cadastro removido do sistema.");
+    }
+
 }

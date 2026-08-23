@@ -1,18 +1,22 @@
 public class Gato {
+    int id;
     String nome;
     Double peso;
     int idade;
 
 
     //Construtor
-    public Gato(Double peso, int idade, String nome) {
+    public Gato(int id, String nome, Double peso, int idade) {
+        this.id = id;
+        this.nome = nome;
         this.peso = peso;
         this.idade = idade;
-        this.nome = nome;
     }
 
-
     //Get
+    public int getId() {
+        return id;
+    }
     public String getNome() {
         return nome;
     }
@@ -24,6 +28,9 @@ public class Gato {
     }
 
     //Set
+    public void setId(int id) {
+        this.id = id;
+    }
     public void setPeso(Double peso) {
         this.peso = peso;
     }
@@ -36,7 +43,8 @@ public class Gato {
 
     @Override
     public String toString() {
-        return "Nome: '" + nome + '\'' +
+        return "Id: " +
+                "Nome: '" + nome + '\'' +
                 " Peso: " + peso +
                 " Idade: " + idade ;
     }
