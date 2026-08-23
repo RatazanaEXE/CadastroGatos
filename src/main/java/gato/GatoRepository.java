@@ -1,3 +1,5 @@
+package gato;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -6,18 +8,18 @@ public class GatoRepository {
 
      public void salvar (Gato gato){
          bancoDeDados.add(gato);
-         System.out.println("Gato: " + gato.getNome() + " cadastrado com sucesso!");
+         System.out.println("gato.Gato: " + gato.getNome() + " cadastrado com sucesso!");
      }
 
     public List<Gato> listar () {
         return bancoDeDados;
     }
 
-    public void atualizarPeso (String nome, double novaPeso){
+    public void atualizarPeso (String nome, double novoPeso){
 
          for(Gato g : bancoDeDados) {
-             if (g.getNome() == nome){
-                g.setPeso(novaPeso);
+             if (g.getNome().equals(nome)){
+                g.setPeso(novoPeso);
                  System.out.println("Peso Alterada com sucesso!");
              }
          }

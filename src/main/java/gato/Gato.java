@@ -1,3 +1,5 @@
+package gato;
+
 public class Gato {
     int id;
     String nome;
@@ -43,8 +45,8 @@ public class Gato {
 
     @Override
     public String toString() {
-        return "Id: " +
-                "Nome: '" + nome + '\'' +
+        return "Id: " + id +
+                " Nome: '" + nome + '\'' +
                 " Peso: " + peso +
                 " Idade: " + idade ;
     }
