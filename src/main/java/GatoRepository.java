@@ -9,5 +9,7 @@ public class GatoRepository {
          System.out.println("Gato: " + gato.getNome() + " cadastrado com sucesso!");
      }
 
-
+    public List<Gato> Listar () {
+        return bancoDeDados;
+    }
 }
