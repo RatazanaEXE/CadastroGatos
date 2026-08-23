@@ -4,13 +4,24 @@ import java.util.List;
 public class GatoRepository {
      private List<Gato> bancoDeDados = new ArrayList<>();
 
-     public void Salvar (Gato gato){
+     public void salvar (Gato gato){
          bancoDeDados.add(gato);
          System.out.println("Gato: " + gato.getNome() + " cadastrado com sucesso!");
      }
 
-    public List<Gato> Listar () {
+    public List<Gato> listar () {
         return bancoDeDados;
+    }
+
+    public void atualizarPeso (String nome, double novaPeso){
+
+         for(Gato g : bancoDeDados) {
+             if (g.getNome() == nome){
+                g.setPeso(novaPeso);
+                 System.out.println("Peso Alterada com sucesso!");
+             }
+         }
+
     }
 
     public void deletar(int id) {
