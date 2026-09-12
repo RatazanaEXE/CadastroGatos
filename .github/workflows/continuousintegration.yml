@@ -1,5 +1,5 @@
-name: GitHub Actions Demo
-run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
+name: Meu Primeiro Workflow
+run-name: Olá, meu nome é ${{ github.actor }} e estou rodando esse workflow automaticamente
 on: [push]
 jobs:
   # job ou uma action
