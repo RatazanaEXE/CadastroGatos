@@ -1,6 +1,8 @@
 name: Meu Primeiro Workflow
-run-name: Olá, meu nome é ${{ github.actor }} e estou rodando esse workflow automaticamente
-on: [push]
+on:
+  pull_request:
+    branches:
+      - main
 jobs:
   # job ou uma action
   minha-primeira-action:
