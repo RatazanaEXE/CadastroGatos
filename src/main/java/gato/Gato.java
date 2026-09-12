@@ -3,7 +3,7 @@ package gato;
 public class Gato {
 
     int id;
-    String nome
+    String nome;
     Double peso;
     int idade;
 
