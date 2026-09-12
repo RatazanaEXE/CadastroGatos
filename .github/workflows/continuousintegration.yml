@@ -10,4 +10,4 @@ jobs:
     runs-on: ubuntu-latest
     # aqui são os steps da job
     steps:
-      - run: echo "Olá, essa é minha primeira action"
+      - run: echo "Configurado com pull request main"
