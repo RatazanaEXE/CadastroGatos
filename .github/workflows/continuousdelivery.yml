@@ -19,6 +19,5 @@ jobs:
       - name: Simulando Continuous Delivery
         uses: actions/upload-artifact@v7
         with:
-          name: cadastroGatos.jar
-          path: target/*.jar
+          path: target/*-spring-boot.jar
           archive: false
