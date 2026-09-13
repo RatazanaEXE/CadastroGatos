@@ -4,20 +4,9 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public final class Main {
+public class Main {
 
-  // google-java-format off
-  private Main() {
-  }
-  // google-java-format on
-
-
-  /**
-   * Starts the Spring Boot application.
-   *
-   * @param args application arguments
-   */
-  public static void main(final String[] args) {
-    SpringApplication.run(Main.class);
-  }
+    public static void main(String[] args) {
+        SpringApplication.run(Main.class);
+    }
 }
