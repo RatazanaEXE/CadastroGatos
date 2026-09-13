@@ -5,7 +5,7 @@ on:
       - main
 jobs:
   # job ou uma action
-  deliver:
+  build:
     # em qual sistema operacional vai rodar
     runs-on: ubuntu-latest
     # aqui são os steps da job
