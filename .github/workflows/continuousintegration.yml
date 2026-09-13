@@ -1,0 +1,15 @@
+name: Continuous Integration
+on:
+  pull_request:
+    branches:
+      - main
+jobs:
+  # job ou uma action
+  build:
+    # em qual sistema operacional vai rodar
+    runs-on: ubuntu-latest
+    # aqui são os steps da job
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v6
+      - run: mvn clean install

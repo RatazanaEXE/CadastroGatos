@@ -1,6 +1,7 @@
 package gato;
 
 public class Gato {
+
     int id;
     String nome;
     Double peso;
