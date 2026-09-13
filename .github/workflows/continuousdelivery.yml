@@ -1,0 +1,17 @@
+name: Continuous Delivery
+
+on:
+	push:
+		branches:
+			- main
+
+jobs:
+	package:
+		runs-on: ubuntu-latest
+		permissions:
+			contents: read
+		steps:
+			- name: Checkout code
+				uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30af803
+			- name: Build package
+				run: mvn --batch-mode clean package
