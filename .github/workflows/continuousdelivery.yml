@@ -1,0 +1,24 @@
+name: Continuous Delivery
+on:
+	push:
+		branches:
+			- main
+jobs:
+	# job ou uma action
+	deliver:
+		# em qual sistema operacional vai rodar
+		runs-on: ubuntu-latest
+		# aqui são os steps da job
+		steps:
+			- name: Check out repository code
+			  uses: actions/checkout@v6
+
+			- name: Build com Maven
+			  run: mvn clean install
+
+			- name: Simulando Continuous Delivery
+			  uses: actions/upload-artifact@v7
+			  with:
+				  name: cadastroGatos.jar
+				  path: target/*.jar
+				  archive: false
