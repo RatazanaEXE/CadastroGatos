@@ -51,9 +51,9 @@ jobs:
     #    with:
     #              username: DOCKERHUB_USERNAME
     #              password: ${{ secrets.DOCKERHUB_TOKEN }}
-      - name: Build and push
-        uses: docker/build-push-action@v6
-        with:
-          context: .
-          push: true
-          tags: user/app:latest
+    #  - name: Build and push
+    #    uses: docker/build-push-action@v6
+    #    with:
+    #      context: .
+    #      push: true
+    #      tags: user/app:latest
